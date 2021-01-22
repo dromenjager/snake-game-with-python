@@ -56,6 +56,12 @@ while game_on:
         scoreboard.game_over()
         game_on = False
 
+    # Game over when snake collides with own tail:
+    for segment in snakes.snakes[1:]:
+        if snakes.head.distance(segment) < 10:
+            scoreboard.game_over()
+            game_on = False
+
 
 # Keep screen alive till click
 screen.exitonclick()
