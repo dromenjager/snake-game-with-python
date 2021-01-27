@@ -1,6 +1,9 @@
 # snake-game-with-python
 A simple snake game built in python with Python's turtle module.
 
+# Demo:
+![Demo](https://github.com/dromenjager/snake-game-with-python/blob/main/demo.gif)
+
 # Installation:
 1. Clone the repo into your local drive:
 ```
