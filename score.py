@@ -1,7 +1,6 @@
 from turtle import Turtle
 ALIGN = "center"
 FONT = ("Arial", 16, "normal")
-FONT_GAME_OVER = ("Arial", 16, "normal")
 
 
 class Score(Turtle):

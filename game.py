@@ -10,10 +10,17 @@ from score import Score
 # setup screen dims
 screen = t.Screen()
 screen.setup(width=600, height=600)
+
 # change the screen background color
 screen.bgcolor("black")
+
 # set the title of the app
 screen.title("Snake game")
+
+# Press enter to start the game
+screen.textinput("Welcome to Turtle Crossing Game",
+"Press enter to start the game")
+
 # Fixing animation glitches - using tracer object
 screen.tracer(0)
 
@@ -51,8 +58,9 @@ while game_on:
         scoreboard.increase_score()
 
     # Game Over when Snake collides with Walls:
-    if (snakes.head.xcor() > 280 or snakes.head.xcor() < -280) or\
-            (snakes.head.ycor() > 280 or snakes.head.ycor() < -280):
+    if (snakes.head.xcor() > 290 or snakes.head.xcor() < -290) or (
+        snakes.head.ycor() > 290 or snakes.head.ycor() < -290
+    ):
         scoreboard.game_over()
         game_on = False
 
